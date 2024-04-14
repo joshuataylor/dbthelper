@@ -1,0 +1,22 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.joshuataylor.dbthelper</id>
+    <name>dbt Helper</name>
+    <vendor>joshuataylor</vendor>
+    <description><![CDATA[
+      <br>Helpers for dbt projects that should make your life a bit easier.
+      ]]></description>
+    <change-notes><![CDATA[]]>
+    </change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.database</depends>
+    <depends>org.jetbrains.plugins.terminal</depends>
+    <depends>com.intellij.modules.json</depends>
+
+    <resource-bundle>messages.DbtHelperBundle</resource-bundle>
+    <extensions defaultExtensionNs="com.intellij">
+        <configurationType
+                implementation="com.github.joshuataylor.dbthelper.runConfiguration.DbtHelperRunConfigurationType"/>
+    </extensions>
+</idea-plugin>
