@@ -4,7 +4,7 @@ annotations = "24.1.0"
 kotlinxSerializationJson = "1.6.3"
 
 # plugins
-kotlin = "1.9.23"
+kotlin = "2.0.0"
 changelog = "2.2.0"
 intelliJPlatform = "2.0.0-beta1"
 qodana = "2023.3.1"
